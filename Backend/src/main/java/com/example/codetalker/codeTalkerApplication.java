@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class codeTalkerApplication {
+public class CodeTalkerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(codeTalkerApplication.class, args);
+		SpringApplication.run(CodeTalkerApplication.class, args);
 	}
 
 }
