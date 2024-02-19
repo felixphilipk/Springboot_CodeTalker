@@ -15,6 +15,8 @@ import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
 
 
 
+
+
 @RestController
 @RequestMapping("/api")
 
@@ -36,6 +38,7 @@ public class RepositoryController {
     @GetMapping("/dependencies")
     public Mono<PomProject> getDependencies(@RequestParam String repoName,@RequestParam String owner, Authentication authentication) throws JAXBException {
         String userName = authentication.getName();
+        System.out.println("userName: "+userName);
         OAuth2AuthorizedClient authorizedClient = authorizedClientService
         .loadAuthorizedClient("github", userName);
         if(authorizedClient!=null & authorizedClient.getAccessToken()!= null){
