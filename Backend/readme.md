@@ -1,4 +1,3 @@
-Certainly, here's a README template that includes instructions on how to run the Spring application locally, how to call its endpoints via Postman, and how to handle GitHub OAuth authentication:
 
 ---
 
